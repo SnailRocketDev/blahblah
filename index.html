@@ -10,53 +10,92 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
   </head>
   <body>
     <div class="title-bar">
       <img class="logo" src="/blahblah/blahblah_logo.png" />
+      <div class="blahblah-container">
+        <h1 class="blahblah">BlahBlah</h1>
+      </div>
       <h1 class="website-name"></h1>
     </div>
+
     <div class="heading">
-      <h1>Learn a language, have real conversations</h1>
+      <h1>Practice your speaking and have real conversations</h1>
       <h2>Select a language:</h2>
     </div>
+
     <div class="languages">
-    <div class="card-container">
-      <div class="card">
-        <div class="card-front">
-        <div class="fr-flag">
-          <span class="fi fi-fr"></span>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-front">
+            <div class="fr-flag"><span class="fi fi-fr"></span></div>
+            <div class="fr-info">
+              <h2>French</h2>
+              <h3>Français</h3>
+              <p>Start speaking</p>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="btn-container">
+              <h1>Select Difficulty:</h1>
+              <button class="warm-up">Warm-Up</button>
+              <button class="easy">Easy</button>
+              <button class="moderate">Moderate</button>
+              <button class="challenging">Challenging</button>
+              <button class="advanced">Advanced</button>
+            </div>
+          </div>
         </div>
-        <div class="fr-info">
-          <h2>French</h2>
-          <h3>Français</h3>
-          <p>Start speaking</p>
-        </div>
-        </div>
-              <div class="card-back">Back</div>
       </div>
 
+      <div class="card-container">
+        <div class="card">
+          <div class="card-front">
+            <div class="es-flag"><span class="fi fi-es"></span></div>
+            <div class="es-info">
+              <h2>Spanish</h2>
+              <h3>Español</h3>
+              <p>Start speaking</p>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="btn-container">
+              <h1>Select Difficulty:</h1>
+              <button class="warm-up">Warm-Up</button>
+              <button class="easy">Easy</button>
+              <button class="moderate">Moderate</button>
+              <button class="challenging">Challenging</button>
+              <button class="advanced">Advanced</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="es-flag">
-          <span class="fi fi-es"></span>
-        </div>
-        <div class="es-info">
-          <h2>Spanish</h2>
-          <h3>Español</h3>
-          <p>Start speaking</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="de-flag">
-          <span class="fi fi-de"></span>
-        </div>
-        <div class="de-info">
-          <h2>German</h2>
-          <h3>Deutsch</h3>
-          <p>Start speaking</p>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card-front">
+            <div class="de-flag"><span class="fi fi-de"></span></div>
+            <div class="de-info">
+              <h2>German</h2>
+              <h3>Deutsch</h3>
+              <p>Start speaking</p>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="btn-container">
+              <h1>Select Difficulty:</h1>
+              <button class="warm-up">Warm-Up</button>
+              <button class="easy">Easy</button>
+              <button class="moderate">Moderate</button>
+              <button class="challenging">Challenging</button>
+              <button class="advanced">Advanced</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="js/home.js"></script>
   </body>
 </html>

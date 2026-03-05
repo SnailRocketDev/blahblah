@@ -3,6 +3,7 @@
   background-color: #f8ba0a;
   letter-spacing: 1px;
   max-height: 8vh;
+  min-height: 6vh;
   align-items: center;
 }
 .website-name {
@@ -11,7 +12,6 @@
   font-size: 48px;
   color: white;
 }
-
 body {
   margin: 0;
   background-color: #fffdf4;
@@ -33,33 +33,43 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.card-container {
+  perspective: 1000px;
+}
 .card {
+  position: relative;
+  transition: transform 0.7s ease;
   width: 400px;
   height: 640px;
-  border-radius: 20px;
-  margin: 0 3vw;
-  /* border: 2px solid black; */
-  /* border-top: 6px solid #f8ba0a; */
-  box-shadow: 6px 6px 0px #000;
+  transform-style: preserve-3d;
   cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
+  margin: 0 3vw;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
   overflow: hidden;
 }
-
-
-.card-container {
-  perspective: 1000px; /* Creates 3D depth */
+.card-front {
+  box-shadow: 6px 6px 0px #000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 6px 6px 0px #111111;
-  
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #f8ba0a;
+  box-shadow: none;
+  border: none;
 }
 
 .fr-flag,
@@ -71,7 +81,6 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-
 .fi-fr,
 .fi-es,
 .fi-de {
@@ -79,14 +88,12 @@ body {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-
 .fr-info,
 .de-info,
 .es-info {
   height: 50%;
   background-color: #f8ba0a;
   color: white;
-  /* padding: 16px; */
   text-align: center;
   box-sizing: border-box;
   display: flex;
@@ -94,7 +101,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .fr-info h2,
 .de-info h2,
 .es-info h2 {
@@ -118,7 +124,6 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-
 .fr-flag .fi,
 .es-flag .fi,
 .de-flag .fi {
@@ -130,11 +135,49 @@ body {
   background-size: cover !important;
   background-position: center !important;
 }
-
 .heading {
   text-align: center;
   font-family: "Fjalla One", sans-serif;
   height: 10vh;
   padding: 0px 0px 70px 0px;
   font-size: 24px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.btn-container button {
+  width: 60%;
+  margin: 25px;
+  min-height: 50px;
+  border-radius: 20px;
+  background-color: #f8ba0a;
+  color:#fffdf4;
+  border: 3px solid #fffdf4;
+}
+
+.btn-container h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: #fffdf4;
+
+}
+
+.blahblah {
+  font-family: "Fjalla One", sans-serif;
+  color: #fffdf4;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 48px;
+}
+
+.blahblah-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
 }
