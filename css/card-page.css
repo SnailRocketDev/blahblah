@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-color: #fffdf4;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 18px,
+    rgba(248, 186, 10, 0.12) 18px,
+    rgba(248, 186, 10, 0.12) 20px
+  );
+}
+
+.logo {
+  max-height: 6vh;
+  padding: 4px 8px;
+}
+
+.blahblah {
+  font-family: "Fjalla One", sans-serif;
+  color: #fffdf4;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+}
+
+.blahblah-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+}
+
+.swiper-wrapper {
+  aspect-ratio: 3/4;
+  height: 80vh;
+}
+
+.mySwiper {
+  aspect-ratio: 3/4;
+  height: 80vh;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  border: 20px solid #f8ba0a;
+}
+
+.swiper-container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.title-bar {
+  display: flex;
+  background-color: #f8ba0a;
+  letter-spacing: 1px;
+  max-height: 8vh;
+  min-height: 6vh;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  max-height: 6vh;
+  padding: 4px 8px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  color: #333;
+}
