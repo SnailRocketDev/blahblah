@@ -35,12 +35,15 @@ body {
 
 .swiper-wrapper {
   aspect-ratio: 3/4;
-  height: 80vh;
+  height: 90vh;
+   overflow: visible;
 }
 
 .mySwiper {
   aspect-ratio: 3/4;
-  height: 80vh;
+height: 85vh;
+   overflow: visible;
+   margin: 2vh;
 }
 .swiper-slide {
   display: flex;
@@ -48,7 +51,11 @@ body {
   align-items: center;
   background: white;
   border-radius: 20px;
-  border: 20px solid #f8ba0a;
+   overflow: visible;
+  border: 20px solid #f6b910;
+    box-sizing: border-box;
+font-family: "Fjalla One", sans-serif;
+  
 }
 
 .swiper-container-wrapper {
@@ -56,11 +63,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+   overflow: visible;
 }
+
+
 
 .title-bar {
   display: flex;
-  background-color: #f8ba0a;
+  background-color: #f6b910;
   letter-spacing: 1px;
   max-height: 8vh;
   min-height: 6vh;
