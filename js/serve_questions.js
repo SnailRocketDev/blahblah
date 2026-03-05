@@ -1,10 +1,6 @@
 document.getElementById("Warm Up").onclick = function () {
   Promise.all([
-    fetch("blahblah/blahblah_a1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_a2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_c1.json").then((res) => res.json()),
+    fetch("blahblah/blahblah-merged-utf-8.json").then((res) => res.json())
   ]).then((allFiles) => {
     const allQuestions = allFiles.flat();
     const easyQuestions = allQuestions.filter((q) => q.DifficultyTag === "Warm-Up");
@@ -17,11 +13,7 @@ document.getElementById("Warm Up").onclick = function () {
 
 document.getElementById("Easy").onclick = function () {
   Promise.all([
-    fetch("blahblah/blahblah_a1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_a2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_c1.json").then((res) => res.json()),
+    fetch("blahblah/blahblah-merged-utf-8.json").then((res) => res.json())
   ]).then((allFiles) => {
     const allQuestions = allFiles.flat();
     const easyQuestions = allQuestions.filter((q) => q.DifficultyTag === "Easy");
@@ -34,11 +26,7 @@ document.getElementById("Easy").onclick = function () {
 
 document.getElementById("Moderate").onclick = function () {
   Promise.all([
-    fetch("blahblah/blahblah_a1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_a2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_c1.json").then((res) => res.json()),
+    fetch("blahblah/blahblah-merged-utf-8.json").then((res) => res.json())
   ]).then((allFiles) => {
     const allQuestions = allFiles.flat();
     const easyQuestions = allQuestions.filter((q) => q.DifficultyTag === "Moderate");
@@ -51,11 +39,7 @@ document.getElementById("Moderate").onclick = function () {
 
 document.getElementById("Challenging").onclick = function () {
   Promise.all([
-    fetch("blahblah/blahblah_a1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_a2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_c1.json").then((res) => res.json()),
+    fetch("blahblah/blahblah-merged-utf-8.json").then((res) => res.json())
   ]).then((allFiles) => {
     const allQuestions = allFiles.flat();
     const easyQuestions = allQuestions.filter((q) => q.DifficultyTag === "Challenging");
@@ -68,11 +52,7 @@ document.getElementById("Challenging").onclick = function () {
 
 document.getElementById("Advanced").onclick = function () {
   Promise.all([
-    fetch("blahblah/blahblah_a1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_a2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b1.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_b2.json").then((res) => res.json()),
-    fetch("blahblah/blahblah_c1.json").then((res) => res.json()),
+    fetch("blahblah/blahblah-merged-utf-8.json").then((res) => res.json())
   ]).then((allFiles) => {
     const allQuestions = allFiles.flat();
     const easyQuestions = allQuestions.filter((q) => q.DifficultyTag === "Advanced");

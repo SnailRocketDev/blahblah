@@ -3,22 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link  rel="stylesheet" href="css/styles.css" />
     <title>BlahBlah</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="top-bar">
-      <h1>BlahBlah</h1>
+    <div class="title-bar">
+      <img class="logo" src="/blahblah/blahblah_logo.png" />
+      <h1 class="website-name"></h1>
     </div>
-      <button id="Warm Up">Warm Up</button>
-      <button id="Easy">Easy</button>
-      <button id="Moderate">Moderate</button>
-      <button id="Challenging">Challenging</button>
-      <button id="Advanced">Advanced</button>
-      <h2 id="question"></h2>
-      <script src="js/serve_questions.js"></script> 
+    <div class="heading">
+      <h1>Learn a language, have real conversations</h1>
+      <h2>Select a language:</h2>
+    </div>
+    <div class="languages">
+    <div class="card-container">
+      <div class="card">
+        <div class="card-front">
+        <div class="fr-flag">
+          <span class="fi fi-fr"></span>
+        </div>
+        <div class="fr-info">
+          <h2>French</h2>
+          <h3>Français</h3>
+          <p>Start speaking</p>
+        </div>
+        </div>
+              <div class="card-back">Back</div>
+      </div>
+
+      </div>
+      <div class="card">
+        <div class="es-flag">
+          <span class="fi fi-es"></span>
+        </div>
+        <div class="es-info">
+          <h2>Spanish</h2>
+          <h3>Español</h3>
+          <p>Start speaking</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="de-flag">
+          <span class="fi fi-de"></span>
+        </div>
+        <div class="de-info">
+          <h2>German</h2>
+          <h3>Deutsch</h3>
+          <p>Start speaking</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
