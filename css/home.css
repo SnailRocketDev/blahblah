@@ -187,8 +187,8 @@ body {
 }
 
 .shadow {
-  background-image: radial-gradient(black, transparent 60%);
-  opacity: 0.24;
+  background-image: radial-gradient(black, transparent 75%);
+  opacity: 0.32;
   width: 100%;
   height: 100%;
   position: absolute;
