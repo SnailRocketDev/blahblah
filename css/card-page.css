@@ -186,3 +186,10 @@ span {
   margin-bottom: 30px;
 }
 
+@media screen and (orientation: portrait) {
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+}
+
