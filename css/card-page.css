@@ -187,9 +187,9 @@ span {
 }
 
 @media screen and (orientation: portrait) {
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
-}
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
 

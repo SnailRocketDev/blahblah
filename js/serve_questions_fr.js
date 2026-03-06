@@ -90,3 +90,12 @@ function startSwiper() {
     },
   });
 }
+
+function handleOrientation() {
+  const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+  const buttons = document.querySelectorAll(".swiper-button-next, .swiper-button-prev");
+  buttons.forEach(btn => btn.style.display = isPortrait ? "none" : "");
+}
+
+window.addEventListener("resize", handleOrientation);
+handleOrientation();
