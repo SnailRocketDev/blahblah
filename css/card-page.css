@@ -191,5 +191,13 @@ span {
   .swiper-button-prev {
     display: none;
   }
+
+  .swiper-container-wrapper {
+    margin-top: 10vw;
+  }
+
+  .mySwiper {
+    height: 60vh;
+  }
 }
 
