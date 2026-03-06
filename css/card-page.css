@@ -236,4 +236,8 @@ span {
   .swiper-slide {
       border: 10px solid #f6b910;
   }
+
+  .languages {
+    margin-bottom: 100px;
+  }
 }
