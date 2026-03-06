@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/card-page.css" />
     <link
       rel="stylesheet"
@@ -18,40 +22,19 @@
   </head>
   <body>
     <div class="title-bar">
-      <img class="logo" src="/blahblah/blahblah_logo.png" />
+      <a href="/"><img class="logo" src="/blahblah/blahblah_logo.png" /></a>
       <div class="blahblah-container">
-        <h1 class="blahblah">BlahBlah</h1>
+        <h1 class="blahblah" id="blahblah">BlahBlah</h1>
       </div>
     </div>
-    <h2 id="question"></h2>
-<div class="swiper-container-wrapper">
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <h2 id="question"></h2>
+    <div class="swiper-container-wrapper">
+      <button class="swiper-button-prev">&#8592;</button>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
       </div>
-      <div class="swiper-slide">Card 2</div>
-      <div class="swiper-slide">Card 3</div>
+      <button class="swiper-button-next">&#8594;</button>
     </div>
-  </div>
-
-
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
     <script src="js/serve_questions_fr.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  centeredSlides: true,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-    </script>
   </body>
 </html>

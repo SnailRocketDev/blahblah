@@ -3,22 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link  rel="stylesheet" href="css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/card-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>BlahBlah</title>
   </head>
   <body>
-    <div class="top-bar">
-      <h1>BlahBlah</h1>
+    <div class="title-bar">
+      <a href="/"><img class="logo" src="/blahblah/blahblah_logo.png" /></a>
+      <div class="blahblah-container">
+        <h1 class="blahblah" id="blahblah">BlahBlah</h1>
+      </div>
     </div>
-      <button id="Warm Up">Warm Up</button>
-      <button id="Easy">Easy</button>
-      <button id="Moderate">Moderate</button>
-      <button id="Challenging">Challenging</button>
-      <button id="Advanced">Advanced</button>
-      <h2 id="question"></h2>
-      <script src="js/serve_questions.js"></script> 
+    <div class="swiper-container-wrapper">
+      <button class="swiper-button-prev">&#8592;</button>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+      </div>
+      <button class="swiper-button-next">&#8594;</button>
+    </div>
+    <script src="js/serve_questions_es.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

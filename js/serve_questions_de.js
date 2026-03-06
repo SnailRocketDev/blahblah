@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tag = difficultyMap[difficulty];
 
   if (tag) {
-    fetch("blahblah/blahblah-french-complete.json")
+    fetch("blahblah/blahblah-german-complete.json")
       .then((res) => res.json())
       .then((allQuestions) => {
         const filtered = allQuestions.filter((q) => q.DifficultyTag === tag);
@@ -51,7 +51,7 @@ function createSlide(result) {
           <p class="theme">${result.Theme}</p>
         </div>
         <div>
-          <p class="question">${result.QuestionFR}</p>
+          <p class="question">${result.QuestionDE}</p>
           <p class="hintEn">${result.HintEN}</p>
         </div>
       </div>
