@@ -240,4 +240,8 @@ span {
   .languages {
     margin-bottom: 100px;
   }
+
+  .title-bar {
+    padding-top: 8px;
+  }
 }
