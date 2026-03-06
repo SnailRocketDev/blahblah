@@ -221,11 +221,15 @@ span {
   }
 
   .hintEn {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .level {
     margin-right: 8px;
     font-size: 1.2em;
+  }
+
+  .starters {
+    font-size: 1.4em;
   }
 }
