@@ -206,6 +206,8 @@ span {
 
   .question {
     font-size: 2em;
+    letter-spacing: normal;
+    word-spacing: normal;
   }
 
   .theme {
